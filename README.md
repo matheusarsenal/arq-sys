@@ -75,3 +75,9 @@ timeout devido a demora na resposta
 problemas na serializacao dos dados enviados
 
 diferente de chamadas locais, chamadas remotas possuem multiplos pontos de falha, o que torna o sistema mais complexo e sujeito a diferentes tipos de erro
+
+# metodos adicionados
+
+- multiplicar dois numeros
+
+- concatenar duas palavras
