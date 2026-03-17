@@ -49,3 +49,29 @@ durante esse periodo o cliente nao executa nenhuma outra operacao
 isso caracteriza uma chamada RPC sincrona (bloqueante)
 
 o cliente nao continua trabalhando enquanto espera
+
+# experimento 4
+
+- procedimento
+
+  1.Parar o servidor utilizando Ctrl + C
+
+  2.Tentar executar qualquer opcao no cliente
+
+- explicação
+
+uma chamada remota pode falhar de diferentes formas pois depende de varios componentes, como rede, servidor e transmissao de dados
+
+as falhas podem ocorrer por:
+
+servidor desligado (conexao recusada)
+
+queda de conexao durante a execucao
+
+erro interno no servidor ao executar a funcao
+
+timeout devido a demora na resposta
+
+problemas na serializacao dos dados enviados
+
+diferente de chamadas locais, chamadas remotas possuem multiplos pontos de falha, o que torna o sistema mais complexo e sujeito a diferentes tipos de erro
