@@ -13,6 +13,8 @@ def menu():
     print("4 - Listar itens da lista remota")
     print("5 - Limpar lista remota")
     print("6 - Chamada lenta (RPC síncrono)")
+    print("7 - multiplicar dois numeros")
+    print("8 - concatenar duas palavras")
     print("0 - Sair")
 
 
@@ -62,6 +64,19 @@ def main():
 
                 print(resultado)
                 print(f"Tempo total de espera no cliente: {fim - inicio:.2f} s")
+                
+            elif opcao == "7":
+                x = int(input("digite o primeiro numero para multiplicação"))
+                y = int(input("digite o segundo numero para multiplicação"))
+                resultado = conn.root.multiplicar(x, y)
+                print(f"resultado: {resultado}")
+            
+            elif opcao == "8":
+                palavra1 = input("digite primeira palavra: ")
+                palavra2 = input("digite uma segunda palavra: ")
+                resultado = conn.root.concatenar(palavra1, palavra2)
+                print(f"Resultado: {resultado}")
+                    
 
             elif opcao == "0":
                 print("Encerrando cliente.")

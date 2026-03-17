@@ -38,6 +38,13 @@ class CalculadoraService(rpyc.Service):
         segundos = int(segundos)
         time.sleep(segundos)
         return f"Servidor demorou {segundos} segundo(s) para responder"
+    
+    def exposed_multiplicar(self, x, y):
+        return x * y
+    
+    def exposed_concatenar(self, palavra1, palavra2):
+        return str(palavra1) + str(palavra2)
+        
 
 
 if __name__ == "__main__":
