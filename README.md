@@ -31,3 +31,21 @@ O estado é centralizado no servidor
 Se múltiplos clientes forem utilizados, todos verão as mesmas alterações, comprovando que os dados não estão armazenados localmente no cliente.
 
 a lista esta no servidor
+
+# experimento 3
+
+- procedimento
+
+  1.Utilizar a opção 6 solicitando um tempo de 5 segundos
+
+- explicação
+
+a chamada e feita no cliente, porem o cliente fica bloqueado aguardando a resposta do servidor
+
+o servidor executa a funcao com um tempo de espera (sleep), simulando um processamento lento
+
+durante esse periodo o cliente nao executa nenhuma outra operacao
+
+isso caracteriza uma chamada RPC sincrona (bloqueante)
+
+o cliente nao continua trabalhando enquanto espera
